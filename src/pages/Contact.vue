@@ -5,7 +5,7 @@ export default{
 </script>
 
 <template>
-
+<h1>sono Contact</h1>
 </template>
 
 <style scoped lang="scss">
