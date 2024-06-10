@@ -1,11 +1,11 @@
 <script>
 export default{
-        name:'Home',
+        name:'Footer',
     };
 </script>
 
 <template>
-<h1>Home</h1>
+    <h2>sono il footer</h2>
 </template>
 
 <style scoped lang="scss">
