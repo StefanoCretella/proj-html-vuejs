@@ -32,17 +32,15 @@ export default{
         <li class="nav-item">
             <router-link class="nav-link fw-medium fs-6" :to="{name:'about'}">About</router-link>
         </li>
-  
-   
-  
-          <li class="nav-item">
-            <a class="nav-link fw-medium fs-6" href="#">Blog</a>
+        <li class="nav-item">
+          <a class="nav-link fw-medium fs-6" href="#">Blog</a>
           </li>
         </ul>
         <span class="navbar-text fw-medium fs-6 ms-3">
           <i class="fas fa-phone icon-orange"></i>(555) 802-1234
         </span>
-        <a class="btn btn-custom ms-3" href="#">Free Quote</a>
+        <router-link class="btn btn-custom ms-3" :to="{ name: 'contact' }">Free Quote</router-link>
+
       </div>
     </div>
   </nav>
