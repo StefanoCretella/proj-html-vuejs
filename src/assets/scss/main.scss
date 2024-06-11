@@ -1,2 +1,42 @@
 @import "bootstrap/scss/bootstrap";
 $mainColor:#F86011;
+
+#first-section-Home{
+    background-image: url("https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-intro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .left{
+        button{
+            background-color: white;
+            &:hover{
+                background-color: rgba(0,0,0,0);
+                border: 2px solid white;
+            }
+        }
+    }
+    .right{
+        position: relative;
+        div{
+            width: 75%;
+            position: absolute;
+            figure{
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                border-radius: 100px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .number{
+                color: $mainColor;
+            }
+            button{
+                background-color: $mainColor;
+            }
+        }
+    }
+}
