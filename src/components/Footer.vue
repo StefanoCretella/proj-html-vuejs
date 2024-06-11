@@ -1,6 +1,9 @@
 <script>
 export default{
         name:'Footer',
+        props:{
+            store:Object
+        },
     };
 </script>
 

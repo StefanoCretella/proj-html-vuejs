@@ -1,6 +1,9 @@
 <script>
 export default{
         name:'Header',
+        props:{
+            store:Object
+        },
     };
 </script>
 
