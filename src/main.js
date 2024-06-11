@@ -7,7 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faSquarespace } from '@fortawesome/free-brands-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faChartSimple } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faSquarespace,faArrowRight,faPhone)
+library.add(faSquarespace,faArrowRight,faPhone,faChartSimple)
 
 createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

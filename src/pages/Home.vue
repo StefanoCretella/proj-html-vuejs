@@ -13,7 +13,7 @@ export default{
 
 <template>
     <div id="first-section-Home" class="py-5">
-        <div class="container py-5">
+        <div class="container py-5 mb-4">
         <div class="row">
             <div class="col-6 left text-white">
                 <h1 class="display-2 fw-semibold mt-5">Unlock Your Online Growth Potential</h1>
@@ -29,7 +29,7 @@ export default{
                     <input type="text" class="form-control fs-5 py-3 my-3" placeholder="Your Name*" aria-label="Username" aria-describedby="addon-wrapping">
                     <input type="text" class="form-control fs-5 py-3 my-3" placeholder="Your Email*" aria-label="Username" aria-describedby="addon-wrapping">
                     <input type="text" class="form-control fs-5 py-3 my-3" placeholder="Your Phone Number*" aria-label="Username" aria-describedby="addon-wrapping">
-                    <button type="button" class="btn btn-lg py-2 text-white w-100 my-2">Get A Callback</button>
+                    <button type="button" class="btn btn-lg py-2 text-white w-100 my-1">Get A Callback</button>
                     <small class="my-3">By submitting my data I agree to be contacted</small>
                 </div>
             </div>

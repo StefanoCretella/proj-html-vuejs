@@ -2,9 +2,14 @@ import { reactive } from 'vue';
 
 export const store=reactive({
     header:[
-        {
-
-        }
+        
+            { name: 'Home', link: 'home' },
+            { name: 'Services', link: '' },
+            { name: 'Why Us', link: '' },
+            { name: 'Case Studies', link: '' },
+            { name: 'About', link: 'about' },
+            { name: 'Blog', link: '' },
+        
     ],
     footer:[
         {

@@ -10,6 +10,7 @@ export default{
 
 <template>
     <h1>About</h1>
+    <font-awesome-icon icon="fa-solid fa-chart-simple" />
 </template>
 
 <style scoped lang="scss">
