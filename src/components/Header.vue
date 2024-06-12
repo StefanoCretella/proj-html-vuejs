@@ -111,4 +111,5 @@ export default{
   align-items: center; 
   flex-grow: 1; 
 }
+
 </style>

@@ -44,7 +44,8 @@ export default{
   </section>
 
   <!-- TERZA SEZIONE: features e dati -->
-  <section class="features-section row text-center mt-section">
+  
+    <section class="features-section row text-center mt-section">
     <div class="col-md-4 feature-item">
         <font-awesome-icon class="toggle-icon" icon="fa-solid fa-chart-simple" />
       <h4 class="feature-title ">245%</h4>
@@ -66,8 +67,90 @@ export default{
     </div>
   </section>
 
+  
 
+  <section class="margin-top ">
+    <div class="row">
+            <div class="col-6">
+                <img class="image-side mb-5" src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/we-boost-our-clients-1200x1098.jpg" alt="">
+            </div>
+            <div class="col-6">
+     
+            <h2 class="side-title">We Boost Our Clients’ Bottom Line by Optimizing Their Growth Potential.</h2>
+                 <div id="customer-service-content" class="content-subtitle-display"> Quisque aliquet, libero consequat elementum convallis, erat imperdiet.</div>
+                 <a class="btn btn-custom2" href="/contact">Why Work With Us</a>
+           </div>
+           <div class="col-12 text-center">
+          <h2 class="mt-5 mb-5">Awards</h2>
+        </div>
+ 
+    </div>
+    <div class="row text-center">
+        <div class="col-md-3">
+          <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-a.png" alt="Award 1" class="img-award ">
+          <h4 class="fw-light">Winner Seo Master MAGT</h4>
+          <h5 class="fw-light">Smart Start Award 2017</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-b.png" alt="Award 2" class="img-award ">
+          <h4 class="fw-light">Top Social Media Agencies</h4>
+          <h5 class="fw-light">Next Partner 2018</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-c.png" alt="Award 3" class="img-award ">
+          <h4 class="fw-light">10 Fastest Growing Abstract</h4>
+          <h5 class="fw-light">Solution Providers 2019</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-d.png" alt="Award 4" class="img-award ">
+          <h4 class="fw-light">National Excellence Agencie</h4>
+          <h5 class="mb-5 fw-light ">Award Winner 2020</h5>
+        </div>
+      </div>
+    <h2 class="side-title2 mt-5">We Boost Our Clients’ Bottom Line <br> by Optimizing Their Growth <br> Potential.</h2>
+    <div class="row">
+            <div class="col-6">
+                <img class="image-side mb-5" src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-consulting-hero-review-1200x1382.jpg" alt="">
+            </div>
+            <div class="col-6">
+     
+            <h4 class="feature-subtitle fw-semibold ms-5">We’re A True Partner</h4>
+               <p class="ms-5 fs-5 mt-4"> Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur. Maecenas maximus blandit facilisis. Nam egestas feugiat felis. Nullam et cursus neque, eget fringilla dolor. Pellentesque congue facilisis lobortis.</p>
+               
+                 <h4 class="feature-subtitle fw-semibold ms-5 mt-5">Proprietary Processes</h4>
+               <p class="ms-5 fs-5 mt-4 mb-5"> Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur. Maecenas maximus blandit facilisis. Nam egestas feugiat felis. Nullam et cursus neque, eget fringilla dolor. Pellentesque congue facilisis lobortis.</p>
+               <hr class="line ms-5">
+               <h5 class="ms-5 fs-4 mt-4">Looking for more services?</h5>
+                 <a class="btn btn-custom3 ms-5 mt-4" href="/contact">Why Work With Us</a>
+                 
+           </div> 
+           <div class="col-12 text-center img-abstract"> <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/abstract.png" alt="" width="100px">
+            <p class="section-subtitle fw-normal text-black mt-3">“The team at Avada Marketing Consultant is fabulous. They helped us unlock our potential online and offline. We have experienced year on year growth due to their progressive approach.”
+            </p>
+            <img class="rounded-pill" src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/small-testimonial.jpg" alt="" width="60px">
+            <h5>Melissa Dean</h5>
+            <div>Marketing Consultant Expert</div>
+    </div>
+    </div>
+    
+  </section>
 </div>
+<section class="orange-section text-center">
+    <div class="row">
+    <h2 class="section-title2 text-center">Let’s Supercharge Your Online Growth
+</h2>
+<div class="col-12">
+    <a class="btn btn-custom-white mt-4 " href="/contact">Book A Free Consultation</a>
+</div>
+
+<div class="col-6 fs-2 mt-3">inquiries@company.com</div>
+<div class="col-6 fs-2 mt-3">Call us (555) 802-1234</div>
+</div>
+</section>
+
+
+
+
 
 </template>
 
@@ -84,6 +167,16 @@ export default{
       font-weight: 20px;
   
     }
+
+    .section-title2 {
+      font-size: 74px;
+      margin-bottom: 20px;
+
+      font-weight: 20px;
+      
+  
+    }
+
     .section-subtitle {
       font-size: 30px;
       margin-bottom: 30px;
@@ -101,7 +194,15 @@ margin-right: 30px;
       margin-bottom: 4rem;
     }
 
- 
+    .side-title2 {
+      font-size: 54px;
+      margin-top: 20px;
+
+margin-right: 30px;
+      font-weight: 20px;
+      margin-bottom: 4rem;
+    }
+
     .btn-custom {
      background-color: $mainColor;
      color: white;
@@ -110,7 +211,7 @@ margin-right: 30px;
       font-size: 1.1rem; 
     }
     .btn-custom:hover {
-      background-color: #dd5e09;
+      background-color: $mainColorDarker;
       color: white;
     
     }
@@ -124,6 +225,12 @@ margin-right: 30px;
       height: auto;
       border-radius: 7px;
 }
+.img-award {
+    width: 45%;
+      height: auto;
+   
+}
+
 
 .margin-top {
     margin-top: 8rem;
@@ -166,6 +273,15 @@ margin-bottom: 2rem;
 
 }
 
+.content-subtitle-display{
+    font-size: 28px;
+  color: #020202;
+
+  margin-left: 2rem;
+margin-right: 4rem;
+margin-top: 1.2rem;
+margin-bottom: 2rem;
+}
 .feature-title {
     font-size: 70px;
     margin-top: 10px;
@@ -184,5 +300,83 @@ margin-bottom: 2rem;
 
 .content-title a:hover {
     color: $mainColor ;
+}
+
+.full-width-bg {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 50px 0; 
+}
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-custom2 {
+    background-color: $mainColor;
+     color: white;
+      border-radius: 10px;
+      padding: 0.7rem 2rem; 
+      font-size: 1.1rem; 
+      margin-left: 2rem;
+}
+
+.btn-custom2:hover {
+    background-color: $mainColorDarker;
+     color: white;
+      border-radius: 10px;
+      padding: 0.7rem 2rem; 
+      font-size: 1.1rem; 
+      margin-left: 2rem;
+}
+
+.btn-custom3 {
+    background-color: $mainColor;
+     color: white;
+      border-radius: 10px;
+      padding: 0.7rem 2rem; 
+      font-size: 1.1rem; 
+    
+}
+.btn-custom3:hover {
+    background-color: $mainColorDarker;
+     color: white;
+      border-radius: 10px;
+      padding: 0.7rem 2rem; 
+      font-size: 1.1rem; 
+    
+}
+.btn-custom-white{
+    background-color: white;
+     color: rgb(0, 0, 0);
+      border-radius: 10px;
+      padding: 0.7rem 2rem; 
+      font-size: 1.1rem; 
+      border: 2px solid black;
+}
+.btn-custom-white:hover{
+    background-color: $mainColor;
+     color: rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 0.7rem 2rem; 
+      font-size: 1.1rem; 
+      border: 2px solid rgb(255, 255, 255);
+}
+.img-abstract{
+
+height: auto;
+margin: 0 auto;
+margin-top: 80px;
+}
+
+.orange-section {
+    background-color: $mainColor; 
+    color: #fff; 
+    padding: 50px 0;
+}
+
+.line{
+
+margin-right: 500px;
 }
 </style>
