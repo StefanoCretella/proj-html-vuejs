@@ -38,6 +38,26 @@ export default{
     </div>
 
     <Component v-for="section in store.componentRepeatHome" :section="section"/>
+
+    <div class="container" id="brand-Work-With-Home">
+        <div class="row">
+            <div class="col12 text-center">
+                   <h2 class="display-4 fw-semibold mt-5">Some Brands We Work With</h2>
+                   <span class="fs-4">Lorem ipsum Tempora praesentium ducimus dolore.</span>
+            </div>
+            <div class="col-2 my-5" v-for="image in store.brandsWorkWith">
+                <img :src="image" alt="brand">
+            </div>
+            <div class="col-12 d-flex border-top-0 shadow-b mt-5" >
+                <div class="col-1 p-0"><figure class="ms-auto"><img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-expert-cta.png"></figure></div>
+            <div class="col-2 ps-2 pt-2">
+                <span class="d-block fs-4 fw-semibold">Sandy Reiff</span><small>Marketing Consultant Expert</small>
+            </div>
+            <div class="col-6 pt-3"><span class="fs-3 fw-semibold">Drive Leads and Sales with Avada</span></div>
+            <div class="col-3"><button type="button" class="btn btn-lg px-5 mt-3"><font-awesome-icon icon="fa-solid fa-phone" /> (555) 802-1234</button></div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style scoped lang="scss">
