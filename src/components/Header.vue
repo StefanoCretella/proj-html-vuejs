@@ -18,7 +18,8 @@ export default{
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li v-for="link in store.header" :class="nav-item">
-            <router-link class="nav-link nav-home fw-medium fs-6" :to="{name: link.link}">{{ link.name }} <i class="fas fa-chevron-down chevron-icon "></i></router-link>
+            <router-link class="nav-link nav-home fw-medium fs-6" :to="{name: link.link}">{{ link.name }}
+               </router-link>
         </li>
         <!-- <li class="nav-item">
             <a class="nav-link fw-medium fs-6" href="#">{{ item.name }} <i class="fas fa-chevron-down chevron-icon"></i></a>
@@ -50,7 +51,7 @@ export default{
 </template>
 
 <style scoped lang="scss">
-@use '../assets/scss/main.scss' as *;
+@use '../assets/scss/variables.scss' as *;
 
     .navbar-custom {
       background-color: #ffffff; 
@@ -96,6 +97,8 @@ export default{
     }
     .icon-orange {
   color: $mainColor; 
+  margin-right: 10px;
+  vertical-align: middle;
 }
 .chevron-icon {
   display: inline-block;
@@ -107,28 +110,5 @@ export default{
   justify-content: space-between; 
   align-items: center; 
   flex-grow: 1; 
-}
-
-// .navbar-custom .navbar-nav .nav-link:hover {
-//   text-decoration: underline; 
-//   text-decoration-color: #ff6600; 
-//   text-decoration-thickness: 2px; 
-  
-// }
-.navbar-custom .navbar-nav .nav-home {
-  position: relative; 
-}
-
-.navbar-custom .navbar-nav .nav-home:hover::after {
-  content: 'Home Alternate';
-  position: absolute; 
-  top: 100%; 
-  left: 0; 
-  background-color: #ffffff; 
-  color: #000000; 
-  padding: 15px 20px;
-  border-radius: 10px;
-  white-space: nowrap;
-  z-index: 1000; 
 }
 </style>

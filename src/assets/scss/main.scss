@@ -1,6 +1,5 @@
+@use './variables.scss' as *;
 @import "bootstrap/scss/bootstrap";
-
-$mainColor:#F86011;
 
 #first-section-Home{
     background-image: url("https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-intro.jpg");
@@ -32,12 +31,52 @@ $mainColor:#F86011;
                     object-fit: cover;
                 }
             }
+            input{
+                &:hover{
+                    border-color: $mainColor;
+                }
+            }
             .number{
                 color: $mainColor;
             }
             button{
                 background-color: $mainColor;
+                &:hover{
+                    background-color: $mainColorDarker;
+                }
             }
+        }
+    }
+}
+
+#brand-Work-With-Home{
+    .col-2{
+        img{
+            width: 150px;
+        }
+    }
+    .col-1{
+        figure{
+            width: 70px;
+            height: 70px;
+            overflow: hidden;
+            border-radius: 70px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .shadow-b{
+        box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: .100);
+    }
+    button{
+        color: $mainColor;
+        background-color:$mainColorOcacity;
+        &:hover{
+            background-color: $mainColor;
+            color: white;
         }
     }
 }
