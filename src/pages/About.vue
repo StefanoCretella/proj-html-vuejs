@@ -72,7 +72,7 @@ export default{
 </template>
 
 <style scoped lang="scss">
-@use '../assets/scss/main.scss' as *;
+@use '../assets/scss/variables.scss' as *;
    .main-content {
       padding: 50px 0;
     }
