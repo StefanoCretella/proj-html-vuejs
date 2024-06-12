@@ -36,7 +36,7 @@ export default{
 </template>
 
 <style scoped lang="scss">
-@use '../assets/scss/main.scss' as *;
+@use '../assets/scss/variables.scss' as *;
 .green{
     background-color: rgb(35, 212, 44);
 }

@@ -1,8 +1,5 @@
+@use './variables.scss' as *;
 @import "bootstrap/scss/bootstrap";
-
-$mainColor:#F86011;
-$mainColorDarker:#cc5617;
-$mainColorOcacity:rgba(248,96,17, 0.15);
 
 #first-section-Home{
     background-image: url("https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-intro.jpg");

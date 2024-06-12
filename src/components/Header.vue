@@ -51,7 +51,7 @@ export default{
 </template>
 
 <style scoped lang="scss">
-@use '../assets/scss/main.scss' as *;
+@use '../assets/scss/variables.scss' as *;
 
     .navbar-custom {
       background-color: #ffffff; 
