@@ -111,27 +111,4 @@ export default{
   align-items: center; 
   flex-grow: 1; 
 }
-
-// .navbar-custom .navbar-nav .nav-link:hover {
-//   text-decoration: underline; 
-//   text-decoration-color: #ff6600; 
-//   text-decoration-thickness: 2px; 
-  
-// }
-.navbar-custom .navbar-nav .nav-home {
-  position: relative; 
-}
-
-// .navbar-custom .navbar-nav .nav-home:hover::after {
-//   content: 'Home Alternate';
-//   position: absolute; 
-//   top: 100%; 
-//   left: 0; 
-//   background-color: #ffffff; 
-//   color: #000000; 
-//   padding: 15px 20px;
-//   border-radius: 10px;
-//   white-space: nowrap;
-//   z-index: 1000; 
-// }
 </style>

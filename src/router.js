@@ -22,7 +22,7 @@ const router= createRouter({
             path:'/contact',
             component:Contact,
         },
-    ]
+    ],
 });
 
 export{ router };

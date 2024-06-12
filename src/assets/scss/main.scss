@@ -32,11 +32,19 @@ $mainColor:#F86011;
                     object-fit: cover;
                 }
             }
+            input{
+                &:hover{
+                    border-color: $mainColor;
+                }
+            }
             .number{
                 color: $mainColor;
             }
             button{
                 background-color: $mainColor;
+                &:hover{
+                    background-color: #cc5617;
+                }
             }
         }
     }
