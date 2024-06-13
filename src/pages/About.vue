@@ -86,26 +86,27 @@ export default{
  
     </div>
     <div class="row text-center">
-        <div class="col-md-3">
-          <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-a.png" alt="Award 1" class="img-award ">
-          <h4 class="fw-light">Winner Seo Master MAGT</h4>
-          <h5 class="fw-light">Smart Start Award 2017</h5>
-        </div>
-        <div class="col-md-3">
-          <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-b.png" alt="Award 2" class="img-award ">
-          <h4 class="fw-light">Top Social Media Agencies</h4>
-          <h5 class="fw-light">Next Partner 2018</h5>
-        </div>
-        <div class="col-md-3">
-          <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-c.png" alt="Award 3" class="img-award ">
-          <h4 class="fw-light">10 Fastest Growing Abstract</h4>
-          <h5 class="fw-light">Solution Providers 2019</h5>
-        </div>
-        <div class="col-md-3">
-          <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-d.png" alt="Award 4" class="img-award ">
-          <h4 class="fw-light">National Excellence Agencie</h4>
-          <h5 class="mb-5 fw-light ">Award Winner 2020</h5>
-        </div>
+
+            <div class="col-3 text-center fs-5">
+                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-a.png" alt="" width="50%" style="filter: invert(90%) contrast(200%) opacity(0.7);">
+                <span class="d-block">Winner Seo Master MAGT</span>
+                <span>Smart Start Award 2017</span>
+            </div>
+            <div class="col-3 text-center fs-5">
+                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-b.png" alt="" width="50%" style="filter: saturate(5);">
+                <span class="d-block">Top Social Media Agencies</span>
+                <span>Next Partner 2018</span>
+            </div>
+            <div class="col-3 text-center fs-5">
+                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-c.png" alt="" width="50%">
+                <span class="d-block">10 Fastest Growing Abstract</span>
+                <span>Solution Providers 2019</span>
+            </div>
+            <div class="col-3 text-center fs-5">
+                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-d.png" alt="" width="50%" style="filter: invert(90%) saturate(5);">
+                <span class="d-block">Nationl Excellence Agencie</span>
+                <span>Award Winner 2020</span>
+            </div>
       </div>
     <h2 class="side-title2 mt-5">We Boost Our Clients’ Bottom Line <br> by Optimizing Their Growth <br> Potential.</h2>
     <div class="row">
