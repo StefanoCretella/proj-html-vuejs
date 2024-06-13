@@ -53,7 +53,7 @@ export const store = reactive({
   componentRepeatHome: [
     {
       id: 0,
-      images: ['../assets/img/repeatComponent/download.png', '../assets/img/repeatComponent/download1.png', '../assets/img/repeatComponent/download3.png', '../assets/img/repeatComponent/download2.png'],
+      images: ['../../assets/img/repeatComponent/download.png', '../../assets/img/repeatComponent/download1.png', '../../assets/img/repeatComponent/download3.png', '../../assets/img/repeatComponent/download2.png'],
       logoText: { id: 0, logo: '', text: 'Business Growth' },
       title: 'Increase Brand Awareness',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae earum atque, assumenda officia ducimus vero.',
@@ -61,7 +61,7 @@ export const store = reactive({
     },
     {
       id: 1,
-      images: ['../assets/img/repeatComponent/download4.png', '../assets/img/repeatComponent/download5.png', '../assets/img/repeatComponent/download6.png', '../assets/img/repeatComponent/download7.png'],
+      images: ['../../assets/img/repeatComponent/download4.png', '../../assets/img/repeatComponent/download5.png', '../../assets/img/repeatComponent/download6.png', '../../assets/img/repeatComponent/download7.png'],
       logoText: { id: 1, logo: '', text: 'Investors in People' },
       title: 'In-House Sales Training',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae earum atque, assumenda officia ducimus vero.',
@@ -69,7 +69,7 @@ export const store = reactive({
     },
     {
       id: 2,
-      images: ['../assets/img/repeatComponent/download8.png', '../assets/img/repeatComponent/download9.png', '../assets/img/repeatComponent/download10.png', '../assets/img/repeatComponent/download11.png', '../assets/img/repeatComponent/download12.png'],
+      images: ['../../assets/img/repeatComponent/download8.png', '../../assets/img/repeatComponent/download9.png', '../../assets/img/repeatComponent/download10.png', '../../assets/img/repeatComponent/download11.png', '../../assets/img/repeatComponent/download12.png'],
       logoText: { id: 2, logo: '', text: 'Social Media Analysis' },
       title: 'Harness Your Social Proof',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae earum atque, assumenda officia ducimus vero.',
@@ -83,5 +83,28 @@ export const store = reactive({
     'https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/hemisferio.png',
     'https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/spaces.png',
     'https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/digitalbox.png'
+  ],
+  leading:[
+    {
+      id:1,
+      img:'https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-1.jpg',
+      p:'How Spaces attracted five million visitors by improving the content',
+      span:'200%',
+      span2:'Higer revenue from digital',
+    },
+    {
+      id:2,
+      img:'https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-4.jpg',
+      p:'Creativity helped Hemisferio to increase their brand reach vertically',
+      span:'10x',
+      span2:'Sales increase with the same ad spend',
+    },
+    {
+      id:3,
+      img:'https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-6.jpg',
+      p:'How DigitalBox used AI-Powered data insight to boost sales',
+      span:'3-year',
+      span2:'Partnetship with Avada Consultant',
+    },
   ]
 });
