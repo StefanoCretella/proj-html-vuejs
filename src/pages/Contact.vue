@@ -1,10 +1,26 @@
 <script>
 import { store } from '../store';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importa il file CSS di Bootstrap
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Importa il file JavaScript di Bootstrap
 
 export default {
   name: 'Contact',
   props: {
     store: Object
+  },
+  data() {
+    return {
+      openAccordions: []
+    };
+  },
+  mounted() {
+    // Aggiungi l'evento di click al pulsante dell'accordion
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+    if (accordionButtons.length > 0) {
+      accordionButtons.forEach(button => {
+        button.addEventListener('click', this.toggleAccordionSymbol);
+      });
+    }
   },
   methods: {
     checkFields() {
@@ -49,10 +65,44 @@ export default {
         phoneNumber.classList.add('invalid');
         phoneNumberLabel.classList.add('label-invalid');
       }
-    }
+    },
+    toggleAccordion(id) {
+      const index = this.openAccordions.indexOf(id);
+      if (index > -1) {
+        this.openAccordions.splice(index, 1);
+      } else {
+        this.openAccordions.push(id);
+      }
+    },
+    isAccordionOpen(id) {
+      return this.openAccordions.includes(id);
+    },
+    toggleAccordionSymbol(event) {
+  // Trova il pulsante dell'accordion cliccato
+  const accordionButton = event.currentTarget;
+  if (!accordionButton) return;
+
+  // Trova l'icona all'interno del pulsante (se esiste)
+  const icon = accordionButton.querySelector('.accordion-symbol');
+
+  // Cambia il simbolo tra "+" e "-" in base allo stato dell'accordion
+  if (accordionButton.getAttribute('aria-expanded') === 'true') {
+    if (icon) icon.textContent = '-';
+  } else {
+    if (icon) icon.textContent = '+';
+  }
+
+  // Imposta il colore e la dimensione del simbolo per tutte le collaps
+  if (icon) {
+    icon.style.fontSize = '50px';
+    icon.style.color = 'orange';
+  }
+}
+
   }
 };
 </script>
+
 
 
 <template>
@@ -155,56 +205,276 @@ export default {
           </div>
         </div>
       </div>
+
     </div>
+
+    <!-- Terza colonna sotto le prime due -->
+    <div class="row justify-content-center" style="padding-top: 5rem;">
+        <div class="col-md-12 text-center">
+          <!-- Titolo della terza colonna -->
+          <h2 style="font-weight: bold; font-size: 30px; margin-bottom: 20px;">What problem are you trying to solve?</h2>
+          
+          <!-- Contenuto della terza colonna -->
+          <div class="accordion" id="collapsedContent">
+
+            <!-- Collapsed item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                  style="font-size: 24px;">
+                  Vivamus id ante vel purus commodo cursus? Nunc sit amet curcus massa?
+                  <span class="accordion-symbol">+</span>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#collapsedContent">
+                <div class="accordion-body" style="font-size: 20px; text-align: left;">
+                  <p>
+                    Suspendisse consectetur, est sed lobortis dictum, turpis orci finibus felis, mattis tempus ex dui ac
+                    diam. Etiam dictum turpis tempor, bibendum lacus eget, ullamcorper eros. Proin vitae viverra metus. In
+                    sed risus vehicula, tincidunt sem vel, dignissim orci. Cras porttitor erat sit amet nisl fermentum, at
+                    pharetra lorem blandit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Collapsed item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"
+                  style="font-size: 24px;">
+                  Quisque aliquet, libero consequat elementum convallis, erat risus imperdiet?
+                  <span class="accordion-symbol">+</span>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" :class="{ 'show': isAccordionOpen('collapseTwo') }" aria-labelledby="headingTwo" data-bs-parent="#collapsedContent">
+                <div class="accordion-body">
+                  <p style="font-size: 20px; text-align: left;">
+                    Fusce egestas elit eget lorem gravida, in tincidunt nunc volutpat. Suspendisse potenti. Aliquam erat volutpat. Curabitur vulputate, elit vitae tincidunt facilisis, augue est suscipit massa, ac varius enim elit eu turpis. Nulla facilisi. Mauris at orci sed massa gravida imperdiet non id nulla.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Collapsed item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne"
+                  style="font-size: 24px;">
+                  Mauris vitae elit maximus nulla egestas dignissim?
+                  <span class="accordion-symbol">+</span>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" :class="{ 'show': isAccordionOpen('collapseThree') }" aria-labelledby="headingThree" data-bs-parent="#collapsedContent">
+                <div class="accordion-body">
+                  <p style="font-size: 20px; text-align: left;">
+                    Maecenas sollicitudin, tortor id volutpat faucibus, purus felis ultricies libero, ac ultrices arcu felis nec dui. Ut auctor vehicula libero. Phasellus vehicula facilisis nisi, at fermentum libero vehicula ut. Nam gravida, urna et sollicitudin pretium, nisi mauris facilisis enim, in dictum nisi purus ac sapien.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Collapsed item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne"
+                  style="font-size: 24px;">
+                  Cras tincidunt magna vel leo malesuada tempus?
+                  <span class="accordion-symbol">+</span>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" :class="{ 'show': isAccordionOpen('collapseFour') }" aria-labelledby="headingFour" data-bs-parent="#collapsedContent">
+                <div class="accordion-body">
+                  <p style="font-size: 20px; text-align: left;">
+                    Suspendisse potenti. Proin dapibus mauris ut tortor congue, at hendrerit arcu tincidunt. Vestibulum a elit vitae nulla fermentum accumsan. Ut feugiat est non nisi sodales, non pretium libero luctus. Nulla facilisi. In vehicula libero sed leo fermentum, et pretium lectus eleifend.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Collapsed item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne"
+                  style="font-size: 24px;">
+                  Proin scelerisque lacus at eros aliquam feugiat?
+                  <span class="accordion-symbol">+</span>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" :class="{ 'show': isAccordionOpen('collapseFive') }" aria-labelledby="headingFive" data-bs-parent="#collapsedContent">
+                <div class="accordion-body">
+                  <p style="font-size: 20px; text-align: left;">
+                    Aenean nec dui id risus lacinia fermentum. Fusce lacinia, orci a lacinia vestibulum, augue nulla fermentum nunc, et aliquet lacus eros eget nisl. Donec vel dui eget nulla venenatis euismod. Integer at volutpat leo. Cras vitae dui nec ligula dictum pulvinar.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Collapsed item 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne"
+                  style="font-size: 24px;">
+                  Etiam id metus nec diam tristique posuere?
+                  <span class="accordion-symbol">+</span>
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" :class="{ 'show': isAccordionOpen('collapseSix') }" aria-labelledby="headingSix" data-bs-parent="#collapsedContent">
+                <div class="accordion-body">
+                  <p style="font-size: 20px; text-align: left;">
+                    Sed viverra ligula et velit laoreet, a facilisis arcu ultricies. Ut in augue nec leo pulvinar volutpat. Mauris vel enim ut dolor fermentum elementum. Nullam eu mauris magna. Integer facilisis nisl id urna cursus, sed vehicula mauris dignissim.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Collapsed item 7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseOne"
+                  style="font-size: 24px;">
+                  Vestibulum eget risus non nulla tincidunt pharetra?
+                  <span class="accordion-symbol">+</span>
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" :class="{ 'show': isAccordionOpen('collapseSeven') }" aria-labelledby="headingSeven" data-bs-parent="#collapsedContent">
+                <div class="accordion-body">
+                  <p style="font-size: 20px; text-align: left;">
+                    Fusce in diam ut augue sollicitudin posuere. Pellentesque gravida ligula eget metus consectetur, sit amet consectetur mi viverra. Aliquam erat volutpat. Praesent a lacus ac turpis sodales faucibus non sit amet leo. Curabitur nec est odio. Integer ac est at nulla pulvinar varius.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
   </main>
 </template>
 
 
 
 <style scoped lang="scss">
+/* Stili per gli elementi con bordi arrotondati */
 .rounded {
-  border-radius: 20px;
+  border-radius: 20px; /* Border radius di 20px */
 }
 
+/* Testo più grande con dimensione di 15px */
 .larger-text {
   font-size: 15px;
 }
 
+/* Stili per liste personalizzate senza stili e padding a sinistra */
 .custom-list {
-  list-style: none;
-  padding-left: 0;
+  list-style: none; /* Rimuove stili lista */
+  padding-left: 0; /* Rimuove padding a sinistra */
 }
 
+/* Bottone arancione con sfondo arancione e testo bianco */
 .btn-orange {
   background-color: orange;
   color: white;
 }
 
+/* Stile per hover del bottone arancione */
 .btn-orange:hover {
-  background-color: darkorange;
+  background-color: darkorange; /* Sfondo più scuro al passaggio del mouse */
 }
 
+/* Stili per input personalizzato con bordo grigio chiaro, bordo arrotondato, padding e transizione */
 .custom-input {
-  width: calc(100% - 2px);
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 12px;
-  font-size: 20px;
-  margin-bottom: 20px;
-  transition: border-color 0.3s;
+  width: calc(100% - 2px); /* Larghezza calcolata */
+  border: 1px solid #ccc; /* Bordo grigio chiaro */
+  border-radius: 10px; /* Border radius di 10px */
+  padding: 12px; /* Padding interno */
+  font-size: 20px; /* Dimensione del testo */
+  margin-bottom: 20px; /* Margine inferiore */
+  transition: border-color 0.3s; /* Transizione colore bordo */
 }
 
+/* Stile per focus dell'input con bordo arancione */
 .custom-input:focus {
-  border-color: orange !important;
-  outline: none;
+  border-color: orange !important; /* Bordo arancione */
+  outline: none; /* Rimuove outline */
 }
 
+/* Classe per input non valido con bordo rosso */
 .invalid {
-  border-color: #E0284F !important;
+  border-color: #E0284F !important; /* Bordo rosso */
 }
 
+/* Classe per label di input non valido con colore rosso */
 .label-invalid {
-  color: #E0284F;
+  color: #E0284F; /* Colore rosso */
 }
 
+/* Stili per il bottone dell'accordion con dimensione del testo di 24px */
+.accordion-button {
+  font-size: 24px;
+}
+
+/* Stili per item dell'accordion senza bordi */
+.accordion-item {
+  border: none; /* Nessun bordo */
+}
+
+/* Stili per bottone dell'accordion con sfondo trasparente e colore testo nero */
+.accordion-button {
+  background-color: transparent; /* Sfondo trasparente */
+  color: #333; /* Colore testo nero */
+  border: none; /* Nessun bordo */
+  outline: none; /* Rimuove outline */
+  box-shadow: none; /* Rimuove ombra */
+  transition: color 0.3s, background-color 0.3s; /* Transizioni fluide */
+  padding: 1rem 1.25rem; /* Padding */
+  display: flex; /* Flexbox */
+  align-items: center; /* Allinea verticalmente */
+  justify-content: space-between; /* Distribuisci orizzontalmente */
+}
+
+/* Stili per hover del bottone dell'accordion */
+.accordion-button:hover {
+  color: orange; /* Colore testo arancione */
+  background-color: #f8f9fa; /* Sfondo grigio chiaro */
+}
+
+/* Stili per collapse dell'accordion con sfondo grigio chiaro e padding */
+.accordion-collapse {
+  background-color: #f8f9fa; /* Sfondo grigio chiaro */
+  padding: 1rem 1.25rem; /* Padding */
+}
+
+/* Nasconde la freccia di default del bottone dell'accordion */
+.accordion-button::after {
+  display: none; /* Nasconde l'elemento ::after */
+}
+
+/* Stili per simbolo + nell'accordion con dimensione del testo di 50px e colore arancione */
+.accordion-symbol {
+  font-size: 50px; /* Dimensione del simbolo + */
+  color: orange; /* Colore arancione */
+  margin-left: 10px; /* Margine sinistra */
+}
+
+/* Stili per simbolo + specifici per headingTwo a headingSeven */
+#headingTwo .accordion-symbol,
+#headingThree .accordion-symbol,
+#headingFour .accordion-symbol,
+#headingFive .accordion-symbol,
+#headingSix .accordion-symbol,
+#headingSeven .accordion-symbol {
+  font-size: 50px; /* Dimensione del simbolo + */
+  color: orange; /* Colore arancione */
+  margin-left: 10px; /* Margine sinistra */
+}
 </style>
+
