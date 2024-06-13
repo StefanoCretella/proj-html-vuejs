@@ -26,7 +26,7 @@ export default{
                 <span class="fw-semibold fs-4 ms-3">{{ section.logoText.text }}</span>
                 <h2 class="display-4 fw-semibold mt-3">{{ section.title }}</h2>
                 <p class="fs-4">{{ section.text }}</p>
-                <button type="button" class="btn btn-lg text-white px-5 py-3 mt-3">{{section.button}}</button>
+                <button type="button" class="btn btn-lg Mainbutton mt-3">{{section.button}}</button>
             </div>
             <div class="col-7 flex-shrink" v-show="section.id===1">
                 <img v-for="(image,index) in section.images" class="position-absolute" :src="getimage(image)" :class="{position4:index==0,position5:index==1,position6:index==2,position7:index==3}" >
@@ -90,12 +90,6 @@ export default{
             left: 540px;
             width: 100px;
         }
-    }
-    button{
-        background-color: $mainColor !important;
-        &:hover{
-                    background-color: $mainColorDarker !important;
-                }
     }
     div .rounded-circle{
         width: 40px;

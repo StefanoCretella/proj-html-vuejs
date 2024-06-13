@@ -1,0 +1,17 @@
+@use './variables.scss' as *;
+
+.Mainbutton{
+    background-color: $mainColor !important;
+    color: white !important;
+    &:hover{
+        background-color: $mainColorDarker !important;
+    }
+    padding: 1rem 2rem !important;
+}
+
+.texthover{
+
+    &:hover{
+        color: $mainColor;
+    }
+}

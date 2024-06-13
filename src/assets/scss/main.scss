@@ -1,12 +1,11 @@
 @use './variables.scss' as *;
+@use './common.scss' as *;
 @import "bootstrap/scss/bootstrap";
 
 #first-section-Home{
     background-image: url("https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-intro.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
- 
 
     .left{
         button{
@@ -42,12 +41,6 @@
             .number{
                 color: $mainColor;
             }
-            button{
-                background-color: $mainColor;
-                &:hover{
-                    background-color: $mainColorDarker;
-                }
-            }
         }
     }
 }
@@ -82,4 +75,8 @@
             color: white;
         }
     }
+}
+.signal{
+    border: 2px solid $mainColor;
+    color: $mainColor;
 }

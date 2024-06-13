@@ -10,11 +10,8 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faChartSimple } from '@fortawesome/free-solid-svg-icons'
 import { faBullseye } from '@fortawesome/free-solid-svg-icons'
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import { faSignal } from '@fortawesome/free-solid-svg-icons'
 
-
-
-
-
-library.add(faSquarespace,faArrowRight,faPhone,faChartSimple, faLightbulb, faBullseye )
+library.add(faSquarespace, faArrowRight, faPhone, faChartSimple, faLightbulb, faBullseye, faSignal)
 
 createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

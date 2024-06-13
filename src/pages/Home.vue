@@ -14,6 +14,7 @@ export default{
 </script>
 
 <template>
+     <!--Head section-->
     <div id="first-section-Home" class="py-5">
         <div class="container py-5 mb-4">
         <div class="row">
@@ -31,16 +32,16 @@ export default{
                     <input type="text" class="form-control fs-5 py-3 my-3" placeholder="Your Name*" aria-label="Username" aria-describedby="addon-wrapping">
                     <input type="text" class="form-control fs-5 py-3 my-3" placeholder="Your Email*" aria-label="Username" aria-describedby="addon-wrapping">
                     <input type="text" class="form-control fs-5 py-3 my-3" placeholder="Your Phone Number*" aria-label="Username" aria-describedby="addon-wrapping">
-                    <button type="button" class="btn btn-lg py-2 text-white w-100 my-1">Get A Callback</button>
+                    <button type="button" class="btn btn-lg Mainbutton w-100 my-1">Get A Callback</button>
                     <small class="my-3">By submitting my data I agree to be contacted</small>
                 </div>
             </div>
         </div>
     </div>
     </div>
-
+     <!--3 section about -->
     <Component v-for="section in store.componentRepeatHome" :section="section"/>
-
+     <!--Brand work with section-->
     <div class="container" id="brand-Work-With-Home">
         <div class="row">
             <div class="col12 text-center">
@@ -60,17 +61,84 @@ export default{
             </div>
         </div>
     </div>
-
-    <div class="container mt-5">
+    <!--Leading section-->
+    <div class="container my-5" id="leading">
         <div class="row">
             <div class="col-12 text-center mb-5">
                 <h2 class="display-4 fw-semibold">Trusted by Leading Organisations</h2>
             </div>
             <Leading v-for="col in store.leading" :col="col" :brand="store.brandsWorkWith"/>
+            <div class="col-12 text-center my-5"><button type="button" class="btn btn-lg Mainbutton mt-3">Read More Case Studies</button></div>
         </div>
+    </div>
+    <!--Relationship section-->
+    <div style="background-color: #F6F6F7;" class="py-5">
+        <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-6 pe-5 pt-5 mb-5">
+                <h2 class="display-4 fw-semibold pe-3">We Boost Our <br>Client's Bottom Line by Optimizing Their Growth Potential.</h2>
+                <p class="fs-4 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore minus voluptas omnis debitis repudiandae qui fuga?</p>
+                <button type="button" class="btn btn-lg Mainbutton mt-4">Why Work With Us</button>
+            </div>
+            <div class="col-6 mb-5">
+                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/we-boost-our-clients-1200x1098.jpg" alt="" width="100%" class="rounded-3">
+            </div>
+            <div class="col-6 pe-5 mt-5">
+                <h3 class="fs-2">We build Relationships</h3>
+                <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. ab nobis odit vitae perspiciatis recusandae Ut!</p>
+                <h3 class="mt-5 fs-2">Proprietary Processes</h3>
+                <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. ab nobis odit vitae perspiciatis recusandae qui</p>
+            </div>
+            <div class="col-6 ps-5">
+                <div class="d-flex my-5">
+                    <font-awesome-icon icon="fa-solid fa-signal" class="fs-4 p-4 rounded-4 signal" />
+                    <div class="ms-4">
+                        <h3 class="texthover">Accountability</h3>
+                        <span>Lorem ipsum dolor sit amet adipisicing elit</span>
+                    </div>
+                </div>
+                <div class="d-flex my-5">
+                    <font-awesome-icon icon="fa-solid fa-signal" class="fs-4 p-4 rounded-4 signal" />
+                    <div class="ms-4">
+                        <h3 class="texthover">Transparency</h3>
+                        <span>Lorem ipsum dolor sit amet adipisicing elit</span>
+                    </div>
+                </div>
+                <div class="d-flex my-5">
+                    <font-awesome-icon icon="fa-solid fa-signal" class="fs-4 p-4 rounded-4 signal" />
+                    <div class="ms-4">
+                        <h3 class="texthover">Investment</h3>
+                        <span>Lorem ipsum dolor sit amet adipisicing elit</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center mt-5">
+                <h2>Awards</h2>
+            </div>
+            <div class="col-3 text-center fs-5">
+                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-a.png" alt="" width="50%" style="filter: invert(90%) contrast(200%) opacity(0.7);">
+                <span class="d-block">Winner Seo Master MAGT</span>
+                <span>Smart Start Award 2017</span>
+            </div>
+            <div class="col-3 text-center fs-5">
+                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-b.png" alt="" width="50%" style="filter: saturate(5);">
+                <span class="d-block">Top Social Media Agencies</span>
+                <span>Next Partner 2018</span>
+            </div>
+            <div class="col-3 text-center fs-5">
+                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-c.png" alt="" width="50%">
+                <span class="d-block">10 Fastest Growing Abstract</span>
+                <span>Solution Providers 2019</span>
+            </div>
+            <div class="col-3 text-center fs-5">
+                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-d.png" alt="" width="50%" style="filter: invert(90%) saturate(5);">
+                <span class="d-block">Nationl Excellence Agencie</span>
+                <span>Award Winner 2020</span>
+            </div>
+        </div>
+    </div>
     </div>
 </template>
 
 <style scoped lang="scss">
-
 </style>
