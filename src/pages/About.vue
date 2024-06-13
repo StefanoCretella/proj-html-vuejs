@@ -17,7 +17,7 @@ export default{
   <section class="about-section text-center">
     <h2 class="section-title">We’re a Team of Marketing Consultants, Passionate in Helping Your Business Grow</h2>
     <p class="section-subtitle">Morbi porta, velit consectetur vehicula suscipit, ligula urna lacinia lectus, sit amet semper massa nibh vitae.</p>
-    <a class="btn btn-custom" href="/contact">Get A Consultation</a>
+    <a class="btn Mainbutton btn-margin" href="/contact">Get A Consultation</a>
     <img class="col-12 img-custom" decoding="async" alt="Marketing Agency Expert" title="Marketing Agency Expert" src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/about-team-intro-scaled.jpg" >
   </section>
 
@@ -26,7 +26,7 @@ export default{
     <div class="row">
     <div class="col-6">
         <div>
-            <h2 class="side-title">We Equip Leaders With Strategy and Vision</h2>
+            <h2 class="display-4 fw-semibold mt-5 mb-5">We Equip Leaders With Strategy and Vision</h2>
         <div class="accordion">
           <h5 class="content-title mb"><a class="" href="#customer-service-content">  <span class="toggle-icon">+ </span>Customer Service</a></h5>
           <div id="customer-service-content" class="content-subtitle"> Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur luctus dui id convallis. Sed pellentesque erat non eu auctor tortor, sit amet egestas purus.</div>
@@ -76,9 +76,9 @@ export default{
             </div>
             <div class="col-6">
      
-            <h2 class="side-title">We Boost Our Clients’ Bottom Line by Optimizing Their Growth Potential.</h2>
-                 <div id="customer-service-content" class="content-subtitle-display"> Quisque aliquet, libero consequat elementum convallis, erat imperdiet.</div>
-                 <a class="btn btn-custom2" href="/contact">Why Work With Us</a>
+            <h2 class="display-4 fw-semibold ms-5">We Boost Our Clients’ Bottom Line by Optimizing Their Growth Potential.</h2>
+                 <div id="customer-service-content" class="content-subtitle-display ms-5"> Quisque aliquet, libero consequat elementum convallis, erat imperdiet.</div>
+                 <a class="btn Mainbutton btn-margin ms-5" href="/contact">Why Work With Us</a>
            </div>
            <div class="col-12 text-center">
           <h2 class="mt-5 mb-5">Awards</h2>
@@ -108,7 +108,7 @@ export default{
                 <span>Award Winner 2020</span>
             </div>
       </div>
-    <h2 class="side-title2 mt-5">We Boost Our Clients’ Bottom Line <br> by Optimizing Their Growth <br> Potential.</h2>
+    <h2 class="display-4 fw-semibold mt-5 mb-5">We Boost Our Clients’ Bottom Line <br> by Optimizing Their Growth <br> Potential.</h2>
     <div class="row">
             <div class="col-6">
                 <img class="image-side mb-5" src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-consulting-hero-review-1200x1382.jpg" alt="">
@@ -122,7 +122,7 @@ export default{
                <p class="ms-5 fs-5 mt-4 mb-5"> Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur. Maecenas maximus blandit facilisis. Nam egestas feugiat felis. Nullam et cursus neque, eget fringilla dolor. Pellentesque congue facilisis lobortis.</p>
                <hr class="line ms-5">
                <h5 class="ms-5 fs-4 mt-4">Looking for more services?</h5>
-                 <a class="btn btn-custom3 ms-5 mt-4" href="/contact">Why Work With Us</a>
+                 <a class="btn Mainbutton btn-margin ms-5 mt-4" href="/contact">Why Work With Us</a>
                  
            </div> 
            <div class="col-12 text-center img-abstract"> <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/abstract.png" alt="" width="100px">
@@ -313,12 +313,8 @@ margin-bottom: 2rem;
   padding-left: 0;
 }
 
-.btn-custom2 {
-    background-color: $mainColor;
-     color: white;
-      border-radius: 10px;
-      padding: 0.7rem 2rem; 
-      font-size: 1.1rem; 
+.btn-margin {
+
       margin-left: 2rem;
 }
 
