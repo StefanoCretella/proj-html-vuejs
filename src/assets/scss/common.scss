@@ -8,10 +8,18 @@
     }
     padding: 1rem 2rem !important;
 }
+// esempio da utilizzare: <button class="btn btn-lg Mainbutton ...">...</button>
 
+/*******************************************************************************/
+
+//Per i titoli H2 usare: <h2 class="display-4 fw-semibold ...">...</h2>
+
+/*******************************************************************************/
 .texthover{
-
     &:hover{
         color: $mainColor;
     }
 }
+//classe utilizzabile per qualsiasi tag. esempi: <h3 class="texthover ...">...</h3>
+
+/*******************************************************************************/

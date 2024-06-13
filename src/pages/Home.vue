@@ -72,71 +72,84 @@ export default{
         </div>
     </div>
     <!--Relationship section-->
-    <div style="background-color: #F6F6F7;" class="py-5">
+    <div style="background-color: #F6F6F7;" class="py-5 mb-5">
         <div class="container py-5">
-        <div class="row py-5">
-            <div class="col-6 pe-5 pt-5 mb-5">
-                <h2 class="display-4 fw-semibold pe-3">We Boost Our <br>Client's Bottom Line by Optimizing Their Growth Potential.</h2>
-                <p class="fs-4 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore minus voluptas omnis debitis repudiandae qui fuga?</p>
-                <button type="button" class="btn btn-lg Mainbutton mt-4">Why Work With Us</button>
-            </div>
-            <div class="col-6 mb-5">
-                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/we-boost-our-clients-1200x1098.jpg" alt="" width="100%" class="rounded-3">
-            </div>
-            <div class="col-6 pe-5 mt-5">
-                <h3 class="fs-2">We build Relationships</h3>
-                <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. ab nobis odit vitae perspiciatis recusandae Ut!</p>
-                <h3 class="mt-5 fs-2">Proprietary Processes</h3>
-                <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. ab nobis odit vitae perspiciatis recusandae qui</p>
-            </div>
-            <div class="col-6 ps-5">
-                <div class="d-flex my-5">
-                    <font-awesome-icon icon="fa-solid fa-signal" class="fs-4 p-4 rounded-4 signal" />
-                    <div class="ms-4">
-                        <h3 class="texthover">Accountability</h3>
-                        <span>Lorem ipsum dolor sit amet adipisicing elit</span>
+            <div class="row py-5">
+                <div class="col-6 pe-5 pt-5 mb-5">
+                    <h2 class="display-4 fw-semibold pe-3">We Boost Our <br>Client's Bottom Line by Optimizing Their Growth Potential.</h2>
+                    <p class="fs-4 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore minus voluptas omnis debitis repudiandae qui fuga?</p>
+                    <button type="button" class="btn btn-lg Mainbutton mt-4">Why Work With Us</button>
+                </div>
+                <div class="col-6 mb-5">
+                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/we-boost-our-clients-1200x1098.jpg" alt="" width="100%" class="rounded-3">
+                </div>
+                <div class="col-6 pe-5 mt-5">
+                    <h3 class="fs-2">We build Relationships</h3>
+                    <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. ab nobis odit vitae perspiciatis recusandae Ut!</p>
+                    <h3 class="mt-5 fs-2">Proprietary Processes</h3>
+                    <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. ab nobis odit vitae perspiciatis recusandae qui</p>
+                </div>
+                <div class="col-6 ps-5">
+                    <div class="d-flex my-5">
+                        <font-awesome-icon icon="fa-solid fa-signal" class="fs-4 p-4 rounded-4 signal" />
+                        <div class="ms-4">
+                            <h3 class="texthover">Accountability</h3>
+                            <span>Lorem ipsum dolor sit amet adipisicing elit</span>
+                        </div>
+                    </div>
+                    <div class="d-flex my-5">
+                        <font-awesome-icon icon="fa-solid fa-signal" class="fs-4 p-4 rounded-4 signal" />
+                        <div class="ms-4">
+                            <h3 class="texthover">Transparency</h3>
+                            <span>Lorem ipsum dolor sit amet adipisicing elit</span>
+                        </div>
+                    </div>
+                    <div class="d-flex my-5">
+                        <font-awesome-icon icon="fa-solid fa-signal" class="fs-4 p-4 rounded-4 signal" />
+                        <div class="ms-4">
+                            <h3 class="texthover">Investment</h3>
+                            <span>Lorem ipsum dolor sit amet adipisicing elit</span>
+                        </div>
                     </div>
                 </div>
-                <div class="d-flex my-5">
-                    <font-awesome-icon icon="fa-solid fa-signal" class="fs-4 p-4 rounded-4 signal" />
-                    <div class="ms-4">
-                        <h3 class="texthover">Transparency</h3>
-                        <span>Lorem ipsum dolor sit amet adipisicing elit</span>
-                    </div>
+                <div class="col-12 text-center mt-5">
+                    <h2>Awards</h2>
                 </div>
-                <div class="d-flex my-5">
-                    <font-awesome-icon icon="fa-solid fa-signal" class="fs-4 p-4 rounded-4 signal" />
-                    <div class="ms-4">
-                        <h3 class="texthover">Investment</h3>
-                        <span>Lorem ipsum dolor sit amet adipisicing elit</span>
-                    </div>
+                <div class="col-3 text-center fs-5">
+                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-a.png" alt="" width="50%" style="filter: invert(90%) contrast(200%) opacity(0.7);">
+                    <span class="d-block">Winner Seo Master MAGT</span>
+                    <span>Smart Start Award 2017</span>
                 </div>
-            </div>
-            <div class="col-12 text-center mt-5">
-                <h2>Awards</h2>
-            </div>
-            <div class="col-3 text-center fs-5">
-                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-a.png" alt="" width="50%" style="filter: invert(90%) contrast(200%) opacity(0.7);">
-                <span class="d-block">Winner Seo Master MAGT</span>
-                <span>Smart Start Award 2017</span>
-            </div>
-            <div class="col-3 text-center fs-5">
-                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-b.png" alt="" width="50%" style="filter: saturate(5);">
-                <span class="d-block">Top Social Media Agencies</span>
-                <span>Next Partner 2018</span>
-            </div>
-            <div class="col-3 text-center fs-5">
-                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-c.png" alt="" width="50%">
-                <span class="d-block">10 Fastest Growing Abstract</span>
-                <span>Solution Providers 2019</span>
-            </div>
-            <div class="col-3 text-center fs-5">
-                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-d.png" alt="" width="50%" style="filter: invert(90%) saturate(5);">
-                <span class="d-block">Nationl Excellence Agencie</span>
-                <span>Award Winner 2020</span>
+                <div class="col-3 text-center fs-5">
+                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-b.png" alt="" width="50%" style="filter: saturate(5);">
+                    <span class="d-block">Top Social Media Agencies</span>
+                    <span>Next Partner 2018</span>
+                </div>
+                <div class="col-3 text-center fs-5">
+                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-c.png" alt="" width="50%">
+                    <span class="d-block">10 Fastest Growing Abstract</span>
+                    <span>Solution Providers 2019</span>
+                </div>
+                <div class="col-3 text-center fs-5">
+                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-d.png" alt="" width="50%" style="filter: invert(90%) saturate(5);">
+                    <span class="d-block">Nationl Excellence Agencie</span>
+                    <span>Award Winner 2020</span>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="container pt-5">
+        <div class="row pt-5">
+            <div class="col-6">
+                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/large-testimonial.jpg" alt="" width="100%" class="rounded-3">
+            </div>
+            <div class="col-5 px-5 pt-5">
+                <p class="fw-semibold fs-3 px-5 mt-5">"The team at Avada Marketing Consultant is fabulous. they hlped us unlock our potential online and offline. We have experienced year growth due to their progressive approach."</p>
+                <span class="d-block fs-5 px-5 mt-5">Kate Schadler</span>
+                <small class="px-5">Marketing Consultant - Abstract</small>
+            </div>
+        </div>
     </div>
 </template>
 
