@@ -1,12 +1,59 @@
 <script>
 import { store } from '../store';
+
 export default {
   name: 'Contact',
   props: {
     store: Object
   },
+  methods: {
+    checkFields() {
+      // Ottenere gli elementi input e le relative etichette
+      const firstName = document.getElementById('firstName');
+      const lastName = document.getElementById('lastName');
+      const email = document.getElementById('email');
+      const phoneNumber = document.getElementById('phoneNumber');
+      
+      const firstNameLabel = document.getElementById('firstNameLabel');
+      const lastNameLabel = document.getElementById('lastNameLabel');
+      const emailLabel = document.getElementById('emailLabel');
+      const phoneNumberLabel = document.getElementById('phoneNumberLabel');
+      
+      // Verifica se gli elementi sono presenti
+      if (!firstName || !lastName || !email || !phoneNumber) {
+        return; // Se uno o più elementi non sono trovati, interrompi l'esecuzione
+      }
+
+      // Rimuovi le classi 'invalid' da tutti gli input e le etichette
+      [firstName, lastName, email, phoneNumber].forEach(input => {
+        input.classList.remove('invalid');
+      });
+      [firstNameLabel, lastNameLabel, emailLabel, phoneNumberLabel].forEach(label => {
+        label.classList.remove('label-invalid');
+      });
+
+      // Aggiungi le classi 'invalid' e 'label-invalid' se i campi sono vuoti
+      if (!firstName.value) {
+        firstName.classList.add('invalid');
+        firstNameLabel.classList.add('label-invalid');
+      }
+      if (!lastName.value) {
+        lastName.classList.add('invalid');
+        lastNameLabel.classList.add('label-invalid');
+      }
+      if (!email.value) {
+        email.classList.add('invalid');
+        emailLabel.classList.add('label-invalid');
+      }
+      if (!phoneNumber.value) {
+        phoneNumber.classList.add('invalid');
+        phoneNumberLabel.classList.add('label-invalid');
+      }
+    }
+  }
 };
 </script>
+
 
 <template>
   <main class="container my-5">
@@ -55,8 +102,58 @@ export default {
         </div>
       </div>
 
-      <!-- Colonna destra -->
+      <!-- Colonna destra senza padding -->
       <div class="col-md-7">
+        <!-- Colonna più piccola con bordi, contorno e stile specifico -->
+        <div class="smaller-column" style="border: 2px solid #ccc; border-radius: 15px; background-color: #FFFFFF; margin: 0px 131px 0px 79px; padding: 20px 40px;">
+          <!-- First Name -->
+          <p id="firstNameLabel" style="font-weight: bold; font-size: 20px; margin-bottom: 20px;">First Name *</p>
+          <input type="text" id="firstName" placeholder="John*" class="custom-input">
+
+          <!-- Last Name -->
+          <p id="lastNameLabel" style="font-weight: bold; font-size: 20px; margin-bottom: 20px;">Last Name *</p>
+          <input type="text" id="lastName" placeholder="Doe*" class="custom-input">
+
+          <!-- Email -->
+          <p id="emailLabel" style="font-weight: bold; font-size: 20px; margin-bottom: 20px;">Email *</p>
+          <input type="email" id="email" placeholder="johndoe@company.com*" class="custom-input">
+
+          <!-- Phone Number -->
+          <p id="phoneNumberLabel" style="font-weight: bold; font-size: 20px; margin-bottom: 20px;">Phone Number *</p>
+          <input type="tel" id="phoneNumber" placeholder="e.g. (555) 802-1234*" class="custom-input">
+
+          <!-- Service Needed -->
+          <p style="font-weight: bold; font-size: 20px; margin-bottom: 20px; width: fit-content; position: relative;">
+            Service Needed * 
+            <span style="position: absolute; top: 50%; transform: translateY(-50%);">
+              <i class="fas fa-question-circle" style="color: #666;"></i>
+            </span>
+          </p>
+          <select class="custom-input" style="width: calc(100% - 2px); border: 1px solid #ccc; border-radius: 10px; padding: 12px; font-size: 20px; margin-bottom: 20px;">
+            <option value="Marketing Consultancy">Marketing Consultancy</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Lead Generation">Lead Generation</option>
+            <option value="Brand Strategy">Brand Strategy</option>
+            <option value="Web Development">Web Development</option>
+          </select>
+
+          <!-- Your Challenge -->
+          <p style="font-weight: bold; font-size: 20px; margin-bottom: 20px;">Your Challenge *</p>
+          <textarea class="custom-input" placeholder="I need help with the next problem..." style="width: 100%; height: 134px; border: 1px solid #ccc; border-radius: 10px; padding: 12px; font-size: 20px; margin-bottom: 20px;"></textarea>
+
+          <!-- Receive Marketing Resources -->
+          <div class="form-check" style="display: flex; align-items: center;">
+            <input class="form-check-input" type="checkbox" value="" id="receiveResourcesCheckbox">
+            <label class="form-check-label" for="receiveResourcesCheckbox" style="font-size: 20px; margin-left: 10px;">
+              Receive Marketing Resources
+            </label>
+          </div>
+
+          <!-- Button Subscribe -->
+          <div class="text-center mt-5">
+            <button type="button" class="btn btn-orange btn-lg d-inline-block mx-auto" style="width: 200px;" @click="checkFields">Subscribe</button>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -77,4 +174,37 @@ export default {
   list-style: none;
   padding-left: 0;
 }
+
+.btn-orange {
+  background-color: orange;
+  color: white;
+}
+
+.btn-orange:hover {
+  background-color: darkorange;
+}
+
+.custom-input {
+  width: calc(100% - 2px);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+.custom-input:focus {
+  border-color: orange !important;
+  outline: none;
+}
+
+.invalid {
+  border-color: #E0284F !important;
+}
+
+.label-invalid {
+  color: #E0284F;
+}
+
 </style>
