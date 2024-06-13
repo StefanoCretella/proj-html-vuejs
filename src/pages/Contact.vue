@@ -201,7 +201,7 @@ export default {
 
           <!-- Button Subscribe -->
           <div class="text-center mt-5">
-            <button type="button" class="btn btn-orange btn-lg d-inline-block mx-auto Mainbutton" style="width: 200px;" @click="checkFields">Subscribe</button>
+            <button type="button" class="btn btn-lg d-inline-block mx-auto Mainbutton" style="width: 200px;" @click="checkFields">Subscribe</button>
           </div>
         </div>
       </div>
@@ -364,6 +364,7 @@ export default {
 
 <style scoped lang="scss">
 @use '../assets/scss/variables.scss' as *;
+
 /* Stili per gli elementi con bordi arrotondati */
 .rounded {
   border-radius: 20px; /* Border radius di 20px */
